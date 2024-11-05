@@ -1,0 +1,23 @@
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Thêm hiệu ứng chuyển động */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Dịch chuyển nhẹ lên trên */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2); /* Tăng độ đổ bóng khi hover */
+}
+
+.card img {
+    width: 100%; 
+    height: auto; /* Giữ nguyên tỷ lệ cho hình ảnh */
+    max-height: 220px; /* Giới hạn chiều cao tối đa */
+    object-fit: cover; /* Đảm bảo hình ảnh không bị bóp méo */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+

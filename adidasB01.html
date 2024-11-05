@@ -1,0 +1,574 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Chi tiết sản phẩm</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="./bootstrap5.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="adidasB01.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row bg-dark">
+            <div class="col-md-6">
+                <a class="navbar-brand ps-5 text-white pt-2" style="font-weight: bold; font-size: 30px;" href="index.css">NEYMARSPORT</a>
+            </div>
+            <div class="col-md-6">
+                <form class="d-flex my-2 my-lg-0">
+                    <input class="form-control me-sm-2 my-sm-2" type="text" placeholder="Search" />
+                    <button class="btn btn-outline-secondary my-2 my-sm-2" type="submit">
+                        Search
+                    </button>
+                </form>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-sm navbar-light" style="background-color: grey;">
+            <div class="container">
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav m-auto mt-2 mt-lg-0 w-100">
+                        <li class="nav-item">
+                            <a class="nav-link active" style="font-weight: bold;" href="index.html" aria-current="page">TRANG CHỦ
+                                <span class="visually-hidden">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" id="dropdownId"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">THƯƠNG HIỆU</a>
+                            <div class="dropdown-menu text-center" aria-labelledby="dropdownId">
+                                <a class="dropdown-item" href="nike.html">NIKE</a>
+                                <a class="dropdown-item" href="adidas.html">ADIDAS</a>
+                                <a class="dropdown-item" href="puma.html">PUMA</a>
+                                <a class="dropdown-item" href="mizuno.html">MIZUNO</a>
+                                <a class="dropdown-item" href="asics.html">ASICS</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="vecuahang.html" aria-current="page">VỀ CỬA HÀNG
+                                <span class="visually-hidden">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" id="dropdownId"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PHỤ KIỆN</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <a class="dropdown-item" href="quaBong.html">QUẢ BÓNG ĐÁ</a>
+                                <a class="dropdown-item" href="vobongda.html">VỚ BÓNG ĐÁ</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" id="dropdownId"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">DỊCH VỤ</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <a class="dropdown-item" href="inAo.html">IN SỐ QUẦN ÁO</a>
+                            </div>
+                        </li>
+                        <li class="nav-item ms-auto">
+                            <a class="nav-link active" data-bs-toggle="modal" data-bs-target="#modalId"
+                                style="font-weight: bold;" href="#" aria-current="page">
+                                <span id="thanhToan" class="fas fa-shopping-cart"></span>
+                                <span class="visually-hidden">(current)</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Modal trigger button -->
+        <!-- Modal Body -->
+        <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+        <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false"
+            role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-md" role="document">
+                <div class="modal-content">
+                    <div class="modal-header bg-dark text-white">
+                        <h5 class="modal-title" id="modalTitleId">
+                            GIỎ HÀNG
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="cart" style="margin: auto;">
+                        <ul id="cartItems">
+                            <!-- Các sản phẩm sẽ được thêm vào đây -->
+                        </ul>
+                        <p style="font-weight: bold;">Tổng: 
+                            <span id="totalPrice" style="color: red;">0</span>
+                            <i>VND</i>
+                        </p>
+                    </div>
+                    <div class="modal-body">
+                        
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                            Close
+                        </button>
+                        <button type="button" class="btn btn-primary" onclick="checkout()">Thanh toán</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Optional: Place to the bottom of scripts -->
+        <script>
+            const myModal = new bootstrap.Modal(
+                document.getElementById("modalId"),
+                options,
+            );
+        </script>
+
+        <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true"
+                    aria-label="First slide"></li>
+                <li data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"></li>
+                <li data-bs-target="#carouselId" data-bs-slide-to="2" aria-label="Third slide"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <img src="./img/sline1.jpg" class="w-100 d-block" alt="First slide" />
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/sline2.png" class="w-100 d-block" alt="Second slide" />
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/sline3.jpg" class="w-100 d-block" alt="Third slide" />
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-5" style="margin-left: 20px;">
+                <div class="row">
+                    <div class="col-md-3">
+                        <img class="card-img-top" src="./img/bong1.webp" alt=""
+                            onclick="changeImage('./img/bong1.webp')" />
+                        <img class="card-img-top" src="./img/bong1-1.webp" alt="Title"
+                            onclick="changeImage('./img/bong1-1.webp')" />
+                        <img class="card-img-top" src="./img/bong1-2.webp" alt="Title"
+                            onclick="changeImage('./img/bong1-2.webp')" />
+                        <img class="card-img-top" src="./img/bong1-3.webp" alt="Title"
+                            onclick="changeImage('./img/bong1-3.webp')" />
+                    </div>
+                    <div class="col-md-8">
+                        <img id="mainImage" class="card-img-top" src="./img/bong1.webp" alt="Main Image"
+                            style="height: 100%;" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h3>Giày Đá Bóng ADIDAS B01 Made in Japan</h3>
+                <div class="price">
+                    <span class="old-price">4,500,000₫</span>
+                    <span class="new-price">4,300,000₫</span>
+                </div>
+                <p class="guarantee">
+                    CAM KẾT SẢN PHẨM CHÍNH HÃNG 100%. ĐƯỢC BỒI HOÀN GẤP 10 LẦN NẾU KHÔNG PHẢI CHÍNH HÃNG
+                </p>
+                <p>
+                    Nhãn hiệu: ADIDAS
+                </p>
+                <p>
+                    Đơn vị phân phối: Công ty TNHH Neymarsport
+                </p>
+                <p style="font-weight: bold;">
+                    SIZE
+                    <span style="font-style: italic; font-weight: normal;">
+                        (Hướng dẫn chọn size giầy ADIDAS)
+                    </span>
+                </p>
+                <div class="size-container">
+                    <div class="size-options">
+                        <div class="size-option" onclick="selectSize(this)">38.5</div>
+                        <div class="size-option" onclick="selectSize(this)">39</div>
+                        <div class="size-option" onclick="selectSize(this)">40</div>
+                        <div class="size-option" onclick="selectSize(this)">40.5</div>
+                        <div class="size-option" onclick="selectSize(this)">41</div>
+                        <div class="size-option" onclick="selectSize(this)">42</div>
+                        <div class="size-option" onclick="selectSize(this)">42.5</div>
+                        <div class="size-option" onclick="selectSize(this)">43</div>
+                        <div class="size-option" onclick="selectSize(this)">44</div>
+                    </div>
+                </div>
+                <label for="quantity1">Số lượng:</label>
+                <input type="number" id="quantityInput" class="quantity-input" value="1" min="1">
+                <div style="border: 1px solid;margin-top: 10px;">
+                    <span class="fas fa-building" id="icon">
+                        <i style="color: black;"> CÓ TẠI 2 CỬA HÀNG!</i>
+                    </span>
+                    <br>
+                    <span class="fas fa-map-marker-alt" id="icon">
+                        <i style="color: black; font-size: 17px;">58/27 Thạch Lam,Hoà Thạnh,Tân Phú,TP.HCM</i>
+                    </span>
+                    <br>
+                    <span class="fas fa-map-marker-alt" id="icon">
+                        <i style="color: black; font-size: 17px;">704/60/6 Hương Lộ 2,Bình Hưng Hoà A,Bình
+                            Tân,TP.HCM</i>
+                    </span>
+                </div>
+                <div class=" text-center mt-3">
+                    <button type="button" class="btn btn-danger" onclick="addToCart('Giày Đá Bóng ADIDAS B01 Made in Japan',4300000)">
+                        Thêm vào giỏ hàng
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="product-detail">
+            <div class="tabs">
+                <button class="tab-button active" onclick="showTab('description')">Mô tả sản phẩm</button>
+                <button class="tab-button" onclick="showTab('specifications')">Thông số kỹ thuật</button>
+                <button class="tab-button" onclick="showTab('purchase-guide')">Hướng dẫn mua hàng</button>
+                <button class="tab-button" onclick="showTab('warranty')">Chính sách bảo hành</button>
+            </div>
+            <div class="tab-content" id="description">
+                <p>
+                    Trước hành trình bảo vệ ngôi vương Copa America cùng Argentina, Lionel
+                    Messi, thủ lĩnh của đội tuyển Argentina, đã được Adidas trang bị một vũ
+                    khí mới đầy lợi hại: đôi giày F50 Messi "Triunfo Dorado". Phiên bản đặc
+                    biệt này không chỉ là sự kết tinh của công nghệ đỉnh cao mà còn là bản hùng
+                    ca bằng vàng, ngợi ca những chiến công hiển hách của siêu sao người Argentina.
+                </p>
+                <p>
+                    Lấy cảm hứng từ F50 Adizero 'Gold', một trong những mẫu giày biểu tượng nhất của
+                    Adidas. F50 đã đồng hành cùng Messi vào 2014 trong một mùa giải đại thành công.
+                    Anh cùng Barcelona giành cú ăn ba lịch sử: La Liga, Cúp Nhà vua và Champions League.
+                </p>
+            </div>
+            <div class="tab-content" id="specifications" style="display:none;">
+                <p style="font-weight: bold;">
+                    Cầu thủ nổi tiếng đại diện:
+                    <span style="font-weight: normal;">Lionel Messi</span>
+                </p>
+                <p style="font-weight: bold;">
+                    Bộ sưu tập:
+                    <span style="font-weight: normal;">Triunfo Dorado</span>
+                </p>
+                <p style="font-weight: bold;">
+                    Năm sản xuất:
+                    <span style="font-weight: normal;">2024.</span>
+                </p>
+                <p style="font-weight: bold;">
+                    Công nghệ:
+                    <span style="font-weight: normal;">
+                        Công nghệ Sprintweb 3D tăng khả năng kiểm soát bóng,
+                        khuôn đế Sprint Frame 360, Lười gà rời Burrito
+                    </span>
+                </p>
+                <p style="font-weight: bold;">
+                    Chất liệu:
+                    <span style="font-weight: normal;">
+                        upper làm từ sợi tổng hợp Fibertouch siêu mỏng và nhẹ
+                    </span>
+                </p>
+                <p style="font-weight: bold;">
+                    Trọng lượng:
+                    <span style="font-weight: normal;">
+                        190 gram/chiếc (Size 41).
+                    </span>
+                </p>
+                <p style="font-weight: bold;">
+                    Phong cách:
+                    <span style="font-weight: normal;">
+                        Tấn công, tốc độ.
+                    </span>
+                </p>
+                <p style="font-weight: bold;">
+                    Vị trí:
+                    <span style="font-weight: normal;">
+                        Tiền vệ cánh, tiền đạo.
+                    </span>
+                </p>
+                <p style="font-weight: bold;">
+                    Form giày:
+                    <span style="font-weight: normal;">
+                        Phù hợp form chân thon/chân bè.
+                    </span>
+                </p>
+                <p style="font-weight: bold;">
+                    Mặt sân:
+                    <span style="font-weight: normal;">
+                        Sân cỏ tự nhiên 11 người.
+                    </span>
+                </p>
+            </div>
+            <div class="tab-content" id="purchase-guide" style="display:none;">
+                <p>
+                    Rất cảm ơn quý khách hàng đã tin tưởng và lựa chọn mua sắm tại
+                    <span style="color: blue;">NEYMARSPORT.COM</span>.
+                    Chúng tôi có những phương thức thanh toán nhanh chóng và tiện lợi để phục vụ quý
+                    khách hàng một cách tốt nhất:
+                </p>
+                <p style="text-decoration: underline; color: red; font-weight: bold;">
+                    1. ĐỐI VỚI KHÁCH HÀNG TẠI TP HCM:
+                </p>
+                <p style="color: rgb(8, 110, 129); font-weight: bold;">
+                    Cách 1: Mua hàng trực tiếp tại cửa hàng
+                </p>
+                <p>
+                    Sau khi chọn được sản phẩm và kiểm tra chi nhánh còn hàng, khách hàng có thể mua
+                    hàng trực tiếp tại các chi nhánh của NEYMARSPORT:
+                </p>
+                <div style="border-left: 4px solid rgb(141, 137, 137);">
+                    <span class="fas fa-map-marker-alt" id="icon">
+                        <i style="color: black; font-size: 17px;">58/27 Thạch Lam,Hoà Thạnh,Tân Phú,TP.HCM</i>
+                    </span>
+                    <br>
+                    <span class="fas fa-map-marker-alt" id="icon">
+                        <i style="color: black; font-size: 17px;">704/60/6 Hương Lộ 2,Bình Hưng Hoà A,Bình
+                            Tân,TP.HCM</i>
+                    </span>
+                </div>
+                <p style="color: rgb(8, 110, 129); font-weight: bold;"></p>
+                Cách 2: Đặt hàng giao ngay qua Hotline, Facebook, Zalo
+                </p>
+                <p>
+                    Nếu không thể đến trực tiếp 1 trong 2 chi nhánh của NEYMARSPORT ,
+                    bạn có thể đặt hàng qua Hotline : 0962.700.714 (8h30-21h từ Thứ
+                    2 đến Chủ Nhật) hoặc các kênh online:
+                </p>
+                <div style="border-left: 4px solid rgb(141, 137, 137);">
+                    <p style="font-weight: bold; padding-left: 10px;">
+                        FB
+                        <span style="font-weight: normal; color: orange; ">
+                            https://www.facebook.com/Neymarsport47
+                        </span>
+                    </p>
+                    <p style="font-weight: bold; padding-left: 10px;">
+                        ZALO:
+                        <span style="font-weight: normal; color: orange;">
+                            https://zalo.me/801017613792419236
+                        </span>
+                    </p>
+                    <p style="font-weight: bold; padding-left: 10px;">
+                        Instagram:
+                        <span style="font-weight: normal; color: orange;">
+                            https://www.instagram.com/neymarsport47/
+                        </span>
+                    </p>
+                </div>
+                <span>
+                    Chúng tôi sẽ hỗ trợ vận chuyển ngay lập tức bằng GrabBike
+                    hoặc các ứng dụng giao hàng Ahamove trong thời gian 1 --> 2 tiếng
+                    theo khách hàng yêu cầu. NEYMARSPORT hỗ trợ phí ship tối đa 50.000vnd
+                </span>
+                <p style="text-decoration: underline; color: red; font-weight: bold;">
+                    2. ĐỐI VỚI KHÁCH HÀNG Ở TỈNH, TP KHÁC:
+                </p>
+                <p style="color: rgb(8, 110, 129); font-weight: bold;">
+                    Cách 1: Thanh toán chuyển khoản
+                </p>
+                <p>
+                    Khách hàng chọn hình thức này sẽ nhận hàng nhanh nhất có thể.
+                    Hàng hoá được chuyển đến tận tay khách hàng trong khoảng 1-3 ngày
+                    (tuỳ địa chỉ) thông qua hình thức Chuyển phát nhanh của công ty vận chuyển
+                    Viettel Post, hoặc bằng nhà xe, chành xe nếu khách hàng yêu cầu.
+                </p>
+
+                <div class="text-center">
+                    <p style="font-size: 30px; font-weight: bold;">
+                        QR THANH TOÁN NEYMARSPORT:
+                    </p>
+                    <img src="./img/QR.jpg" alt="" width="500px">
+                    <p>
+                        Khi nhận được chuyển khoản, NEYMARSPORT sẽ nhắn tin hoặc gọi điện thoại
+                        trực tiếp cho Khách hàng để xác nhận. Hàng đựơc ship đi trong ngày, khi
+                        chuyển hàng NEYMARSPORT sẽ gửi kèm bạn thông tin mã vận đơn để cho khách
+                        hàng thuận tiện trong việc kiểm tra tình trạng đơn hàng và chủ động nhận hàng.
+                    </p>
+                </div>
+                <p style="color: rgb(8, 110, 129); font-weight: bold;">
+                    Cách 2: Thử giày - Thanh toán tại nhà (COD)
+                </p>
+                <p>
+                    <span style="font-weight: bold;">Dịch vụ Thử giày - Thanh toán tại nhà (COD):</span>
+                    ĐỐI VỚI NHƯNG KHÁCH HÀNG MỚI, CHƯA TỪNG CÓ LỊCH SỬ MUA HÀNG TẠI NEYMARSPORT,
+                    khi chọn dịch vụ này Khách sẽ đặt cọc trước
+                    <span style="color: brown; font-weight: bold;">100.000vnd</span>,
+                    tiền cọc được trừ vào giá sản phẩm. Khách nhận hàng sẽ được KIỂM TRA SẢN PHẨM,
+                    THỬ GIÀY và sau đó thanh toán cho shipper. Trong trường hợp khách không
+                    nhận hàng, tiền cọc được tính là phí vận chuyển 2 chiều và sẽ không hoàn lại.
+                    Đối với những khách hàng đã là Neymarsport Membership hạng VÀNG, BẠCH KIM, KIM
+                    CƯƠNG sẽ không cần đặt cọc đối với dịch vụ này.
+                </p>
+                <p>
+                    Vd : Giá sản phẩm là : <span style="color: brown; font-weight: bold;">1.950.000vnd</span>,
+                    Khách hàng chọn hình thức COD sẽ đặt cọc trước
+                    <span style="color: brown; font-weight: bold;">100.000vnd</span>
+                    bằng chuyển khoản. Khi shipper giao hàng đến, Khách hàng nhận hàng sẽ
+                    thanh toán <span style="color: brown; font-weight: bold;">1.850.000vnd</span> cho shipper giao hàng.
+                </p>
+            </div>
+            <div class="tab-content" id="warranty" style="display:none;">
+                <p style="font-weight: bold;">1. CÁC TRƯỜNG HỢP ĐƯỢC BẢO HÀNH:</p>
+                <div style="border-left: 4px solid rgb(141, 137, 137); padding-left: 10px; color: darkblue;">
+                    <p>
+                        - Hở keo ép mũi giày, thân giày do ma sát với mặt cỏ.
+                    </p>
+                    <p>
+                        - Các vết rách, lủng da do va chạm hoặc vật sắc nhọn đâm thủng.
+                    </p>
+                    <p>
+                        - Các lỗi nhỏ ít gặp khác: Rách cổ thun, hỏng đệm mút gót...
+                    </p>
+                </div>
+                <p style="font-weight: bold;">2. CÁC TRƯỜNG HỢP KHÔNG BẢO HÀNH ĐƯỢC:</p>
+                <p style="color: red; font-weight: bold;">
+                    Các trường hợp sau đây không bảo hành được, do các bộ phận này không thể
+                    sửa chữa hay thay mới:
+                </p>
+                <div style="border-left: 4px solid rgb(141, 137, 137); padding-left: 10px;">
+                    <p style="font-weight: bold;">
+                        - GÃY ĐINH, NỨT ĐẾ HOẶC BỂ ĐẾ
+                        <span style="font-weight: normal;">
+                            khi thi đấu trên mặt sân cứng hoặc tiếp xúc vật cứng
+                            ( đinh nhọn , đá nhọn ... ), hoặc nhiều trường hợp khách muốn giày mềm
+                            nhanh thường hay bẻ gập đế , đưa cho người khác mang để NONG giày... các yếu
+                            tố chủ quan khác làm hư tổn đế đều không thể bảo hành hay thay mới.
+                        </span>
+                    </p>
+                    <p style="font-weight: bold;">
+                        - ĐẶC BIỆT ĐỐI VỚI CÁC VẤN ĐỀ LIÊN QUAN ĐẾN THẨM MỸ
+                        <span style="font-weight: normal;">
+                            (trầy xước da, Nổ da ,Bong tróc logo ,phai màu, đứt dây, bong tróc
+                            các hoạ tiết thẩm mỹ khi ma sát trong thi đấu...) sẽ không thể bảo hành hay
+                            làm mới.
+                        </span>
+                    </p>
+                    <p style="color: red; font-weight: bold;">
+                        - Lưu ý: Các trường hợp Khách hàng tự ý sửa chữa hoặc giày bị động vật cắn
+                        làm hư hỏng kết cấu giày NEYMARSPORT có thể từ chối bảo hành.
+                    </p>
+                </div>
+            </div>
+            <div class="product-images">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="./img/bong1-1.webp" alt="Mizuno Morelia SALA">
+                    </div>
+                    <div class="col-md-6">
+                        <img src="./img/bong1.webp" alt="Mizuno Morelia SALA">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row bg-dark mt-3">
+                <div class="col-lg-3 col-6 text-white mt-4">
+                    <h2 style="font-weight: bold;">NEYMARSPORT</h2>
+                    <a href=""><span class="fas fa-angle-double-right"> Giới thiệu</span></a><br>
+                    <a href=""><span class="fas fa-angle-double-right"> Liên hệ</span></a><br>
+                    <a href=""><span class="fas fa-angle-double-right"> Tuyển dụng</span></a><br>
+                    <a href=""><span class="fas fa-angle-double-right"> Tin tức</span></a><br>
+                    <span class="fas fa-envelope"> Email:<a href=""> minhnhi120997@gmail.com</a></span>
+                    <span class="fas fa-phone"> Hotline::<a href="">0962700714</a></span>
+                    <p>Đăng ký nhận email khuyến mãi</p>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Email của bạn"
+                            aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <button type="button" class="btn btn-danger">
+                            Đăng ký
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-6 text-white mt-4">
+                    <h4 style="font-size: 20px;">HỔ TRỢ KHÁCH HÀNG</h4>
+                    <a href=""><span class="fas fa-angle-double-right"> Hướng dẫn đặt hàng</span></a><br>
+                    <a href=""><span class="fas fa-angle-double-right"> Hướng dẫn chọn size</span></a><br>
+                    <a href=""><span class="fas fa-angle-double-right"> Câu hỏi thường gặp</span></a><br>
+                    <a href=""><span class="fas fa-angle-double-right"> Chính sách khách VIP</span></a><br>
+                    <a href=""><span class="fas fa-angle-double-right"> Thanh toán & Giao hàng</span></a><br>
+                    <a href=""><span class="fas fa-angle-double-right"> Chính sách đổi hàng</span></a><br>
+                    <a href=""><span class="fas fa-angle-double-right"> Chính sách bảo mật</span></a><br>
+
+                </div>
+                <div class="col-lg-4 col-6 text-white mt-4">
+                    <h4 style="font-size: 20px; text-align: center;">HỆ THỐNG CỬA HÀNG</h4>
+                    <p>Địa Chỉ: 58/27 Thạch Lam,Phường Hoà Thạnh, Quận Tân Phú, TP.HCM</p>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.439868495852!2d106.
+                    62789697491858!3d10.77758345917262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
+                    1!3m3!1m2!1s0x31752ea74746d8e5%3A0xbb4f80a846b29f18!2zNTgvMjcgVGjhuqFjaCBMYW0sIFBow7ogVGjhuqFuaCwgVMOibiBQaMO6LCBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1720292153031!5m2!1svi!2s"
+                        width="90%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="col-lg-3 col-6 text-white mt-4">
+                    <h4 style="font-size: 20px; text-align: center;">KẾT NỐI VỚI CHÚNG TÔI</h4>
+                    <img src="./img/nhi.jpg" width="100%" height="200px">
+                    <div class="mt-3 " style="text-align: center;">
+                        <img src="./img/icon-1.png" alt="">
+                        <img src="./img/icon-2.png" alt="">
+                        <img src="./img/icon-3.png" alt="">
+                        <img src="./img/icon-4.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script>
+        function changeImage(imageUrl) {
+            document.getElementById('mainImage').src = imageUrl;
+        }
+    </script>
+    <script>
+        function selectSize(element) {
+            // Loại bỏ class 'selected' khỏi các nút bấm khác
+            const sizeOptions = document.querySelectorAll('.size-option');
+            sizeOptions.forEach(option => option.classList.remove('selected'));
+
+            // Thêm class 'selected' vào nút vừa chọn
+            element.classList.add('selected');
+        }
+    </script>
+    <script>
+        function showTab(tabId) {
+            // Hide all tab content
+            var contents = document.getElementsByClassName('tab-content');
+            for (var i = 0; i < contents.length; i++) {
+                contents[i].style.display = 'none';
+            }
+
+            // Remove 'active' class from all buttons
+            var buttons = document.getElementsByClassName('tab-button');
+            for (var i = 0; i < buttons.length; i++) {
+                buttons[i].classList.remove('active');
+            }
+
+            // Show the selected tab content
+            document.getElementById(tabId).style.display = 'block';
+
+            // Add 'active' class to the clicked button
+            event.target.classList.add('active');
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous">
+    </script>
+    <script src="thanhtoan.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>NEYMARSPORT</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="./bootstrap5.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" 
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row bg-dark">
+            <div class="col-md-6">
+                <a class="navbar-brand ps-5 text-white pt-2" style="font-weight: bold; font-size: 30px;" href="#">NAYMARSPORT</a>
+            </div>
+            <div class="col-md-6">
+                <form class="d-flex my-2 my-lg-0">
+                    <input class="form-control me-sm-2 my-sm-2" type="text" placeholder="Search" />
+                    <button class="btn btn-outline-secondary my-2 my-sm-2" type="submit">
+                        Search
+                    </button>
+                </form>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-sm navbar-light" style="background-color: grey;">
+            <div class="container">
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav m-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" style="font-weight: bold;" href="index.html" aria-current="page">
+                                TRANG CHỦ
+                                <span class="visually-hidden">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" id="dropdownId"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">THƯƠNG HIỆU</a>
+                            <div class="dropdown-menu text-center" aria-labelledby="dropdownId">
+                                <a class="dropdown-item" href="nike.html">NIKE</a>
+                                <a class="dropdown-item" href="adidas.html">ADIDAS</a>
+                                <a class="dropdown-item" href="puma.html">PUMA</a>
+                                <a class="dropdown-item" href="mizuno.html">MIZUNO</a>
+                                <a class="dropdown-item" href="asics.html">ASICS</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="vecuahang.html" aria-current="page">VỀ CỬA HÀNG
+                                <span class="visually-hidden">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" id="dropdownId"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PHỤ KIỆN</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <a class="dropdown-item" href="quaBong.html">QUẢ BÓNG ĐÁ</a>
+                                <a class="dropdown-item" href="vobongda.html">VỚ BÓNG ĐÁ</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" id="dropdownId"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">DỊCH VỤ</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <a class="dropdown-item" href="inAo.html">IN SỐ QUẦN ÁO</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" data-bs-toggle="modal"
+                            data-bs-target="#modalId" style="font-weight: bold;" href="#" aria-current="page">ĐĂNG NHẬP
+                                <span class="visually-hidden">(current)</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Modal trigger button -->
+        <!-- Modal Body -->
+        <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+        <div
+            class="modal fade"
+            id="modalId"
+            tabindex="-1"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            
+            role="dialog"
+            aria-labelledby="modalTitleId"
+            aria-hidden="true"
+        >
+            <div
+                class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-md"
+                role="document"
+            >
+                <div class="modal-content">
+                    <div class="modal-header bg-dark text-white">
+                        <h5 class="modal-title" id="modalTitleId">
+                            ĐĂNG NHẬP
+                        </h5>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="" class="form-label">TÊN ĐĂNG NHẬP:</label>
+                            <input
+                                type="text"
+                                class="form-control"
+                                name=""
+                                id=""
+                                aria-describedby="helpId"
+                                placeholder=""
+                            />
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="form-label">MẬT KHẨU:</label>
+                            <input
+                                type="password"
+                                class="form-control"
+                                name=""
+                                id=""
+                                aria-describedby="helpId"
+                                placeholder=""
+                            />
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="" />
+                                    <label class="form-check-label" for=""> Nhớ mật khẩu? </label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <a href="">Quên mật khẩu?</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-bs-dismiss="modal"
+                        >
+                            Close
+                        </button>
+                        <button type="button" class="btn btn-primary">ĐĂNG NHẬP</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Optional: Place to the bottom of scripts -->
+        <script>
+            const myModal = new bootstrap.Modal(
+                document.getElementById("modalId"),
+                options,
+            );
+        </script>
+        <div style="height: 300px; background-color: black;
+         color: white; font-weight: bold;text-align: center;">
+            <h1 style="padding-top: 50px;">CÂU CHUYỆN VỀ NAYMARSPORT</h1>
+            <p>
+                Đây là chuyên mục giúp các bạn biết được NAYMARSPORT đã hình thành 
+                ra sao và chúng tôi muốn xây dựng một công ty như thế nào!
+            </p>
+        </div>
+            <div class="row">
+                <div class="col-md-3 m-auto">
+                    <h3 class="pt-4">NEYMARSPORT được hình thành như thế nào?</h3>
+                    <img class="w-100" src="./img/Giayvang.webp" alt="">
+                </div>
+                <div class="col-md-7 m-auto">
+                    <p>
+                        Khởi nguồn từ niềm đam mê bất tận với giày bóng đá, năm 2012 khi còn ngồi ở 
+                        ghế nhà trường, 2 Founder Long Nani và Đại Neymar, nhận thấy việc tìm mua 1 
+                        đôi giày bóng đá chính hãng tại Việt Nam thực sự là điều vô cùng khó khăn. 
+                        Nhìn sang các nước láng giềng như Thái Lan hay Trung Quốc, người dân thường 
+                        sử dụng giày chính hãng, và họ sản xuất rất nhiều giày nhái để đẩy qua thị 
+                        trường Việt Nam. Bản thân của người dân Việt Nam cũng chưa có khái niệm rõ 
+                        ràng về "Giày bóng đá chính hãng" nên thường mua nhầm những sản phẩm nhái 
+                        này. Nhận thấy đây là cơ hội cũng là sứ mệnh cần phải thực hiện, NEYMARSPORT 
+                        được ra đời từ đó. 
+                        Cái tên NEYMARSPORT ra đời cũng rất ngẫu nhiên. Năm 2012 Neymar là một cầu 
+                        thủ trẻ đang lên tại Santos, nhận thấy tiềm năng cầu thủ này sẽ trở thành một 
+                        ngôi sao tiếp theo thay thế cho CR7 và Messi, chúng tôi đã quyết định chọn 
+                        NEYMAR và thêm SPORT để xây dựng lên đứa con tinh thần của mình, với mong muốn 
+                        thương hiệu non trẻ này một ngày nào đó sẽ vươn mình trở thành một thương hiệu lớn. 
+                        Bắt đầu với cửa hàng đầu tiên 40m2 tại TP Thủ Đức, sau hơn 10 năm hình thành và
+                        phát triển, chúng tôi hiện tại có 6 chi nhánh tại TP HCM & Biên Hoà, phục vụ hơn 
+                        30.000 Khách hàng mỗi năm trên mọi miền tổ quốc. Là đơn vị đi tiên phong trong 
+                        mô hình reseller giày bóng đá chính hãng, chúng tôi tự hào là một trong những hệ 
+                        thống cung cấp giày bóng đá chính hãng hàng đầu tại Việt Nam.
+                    </p>
+                </div>
+                <div style="height: 250px; background-color:black; color: yellow;">
+                    <div class="col-md-7 text-center m-auto">
+                        <p style="font-size: 25px;">
+                            “Cái tên NEYMARSPORT ra đời cũng rất ngẫu nhiên. <br> Năm 2012 Neymar là một cầu 
+                            thủ trẻ đang lên tại Santos, nhận thấy tiềm năng cầu thủ này sẽ trở thành một 
+                            ngôi sao tiếp theo thay thế cho CR7 và Messi, chúng tôi đã quyết định chọn NEYMAR 
+                            và thêm SPORT để xây dựng lên đứa con tinh thần của mình, với mong muốn thương hiệu
+                             non trẻ này một ngày nào đó sẽ vươn mình trở thành một thương hiệu lớn. “
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <h4>Hệ thống cửa hàng NAYMARSPORT</h4>
+                    <img class="w-100" src="./img/chinhanh2.png" alt="">
+                </div>
+                <div class="col-md-6 m-auto">
+                    <h4 style="color: rgb(239, 239, 111); text-align: center;">
+                        TẠI SAO KHÁCH HÀNG YÊN TÂM KHI LỰA CHỌN NEYMARSPORT ?
+                    </h4>
+                    <span class="fas fa-hand-point-right mt-2">
+                    Chúng tôi có 7 CHI NHÁNH với đa dạng mẫu mã và nằm ở những 
+                    vị trí trung tâm, rất thuận tiện cho khách hàng đến trải nghiệm và mua sắm. 
+                    </span>
+                    <span class="fas fa-hand-point-right mt-2">
+                        Cam kết các sản phẩm chính hãng 100% được nhập khẩu Fullbox từ các nhà phân 
+                        phối chính hãng tại Việt Nam - Quý khách có thể kiểm tra tem, nhãn trên sản 
+                        phẩm, và tham khảo ý kiến mọi người trước khi quyết định mua hàng tại NEYMARSPORT.COM  
+                    </span>
+                    <span class="fas fa-hand-point-right mt-2">
+                        Chính sách <i style="color: brown;">BỒI THƯỜNG GẤP 10 LẦN NẾU SẢN PHẨM KHÔNG PHẢI CHÍNH HÃNG.</i>  
+                        Các sản phẩm đều được bảo hành tuyệt đối trong suốt thời gian sử dụng 
+                        theo chính sách của từng nhà phân phối.  
+                    </span>
+                    <span class="fas fa-hand-point-right mt-2">
+                    NEYMARSPORT được nhiều khách hàng là tuyển thủ Quốc gia, cầu thủ chuyên nghiệp, 
+                    ca sỹ, người nổi tiếng...tin tưởng lựa chọn .
+                    </span>
+                </div>
+                <div class="col-md-6">
+                    <h4 style="color: chocolate;text-transform: uppercase;">
+                        Định hướng mô hình NAYMARSPORT đang hướng tới.
+                    </h4>
+                    <span class="fas fa-edit" style="text-transform: uppercase; font-size: 15px;color: rgb(1, 1, 67);">
+                        Với khách hàng:
+                    </span>
+                    <i class="fas fa-long-arrow-alt-right   ">
+                        Luôn cập nhật những mẫu mã giày bóng đá chính hãng mới nhất và những chính sách 
+                        khuyến mãi - ưu đãi giảm giá hấp dẫn để đáp ứng được nhu cầu của các anh em đam 
+                        mê môn thể thao vua.Xây dựng chính sách bảo hành tuyệt đối với sản phẩm và đổi 
+                        hàng trong vòng 7-14 ngày, thanh toán tiện lợi thông qua dịch vụ thử giày tại nhà
+                         để anh em yên tâm khi đặt hàng tại Neymarsport Nâng cao nghiệp vụ của đội ngũ NVBH,
+                          CSKH nhằm tư vấn cho khách hàng một cách chuyên nghiệp và kỹ càng nhất.Lấy sự hài 
+                          lòng của khách hàng chính là mục tiêu to lớn nhất, là thước đo thành công của một
+                          thương hiệu. 
+                    </i>                     
+                </div>
+            </div>
+        <div class="container-fluid">
+            <div class="row bg-dark mt-3" >
+                <div class="col-lg-3 col-6 text-white mt-4">
+                    <h2 style="font-weight: bold;">MINH NHÍ STORE</h2>
+                    <a href=""><span class="fas fa-angle-double-right"> Giới thiệu</span></a><br>
+                    <a href=""><span class="fas fa-angle-double-right"> Liên hệ</span></a><br>
+                    <a href=""><span class="fas fa-angle-double-right"> Tuyển dụng</span></a><br>
+                    <a href=""><span class="fas fa-angle-double-right"> Tin tức</span></a><br>
+                    <span class="fas fa-envelope"> Email:<a href="">   minhnhi120997@gmail.com</a></span>
+                    <span class="fas fa-phone"> Hotline::<a href="">0962700714</a></span>
+                    <p>Đăng ký nhận email khuyến mãi</p>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Email của bạn" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <button
+                            type="button"
+                            class="btn btn-danger"
+                        >
+                            Đăng ký
+                        </button>
+                      </div>
+                </div>
+                <div class="col-lg-2 col-6 text-white mt-4">
+                    <h4 style="font-size: 20px;">HỔ TRỢ KHÁCH HÀNG</h4>
+                    <a href=""><span class="fas fa-angle-double-right"> Hướng dẫn đặt hàng</span></a><br>
+                    <a href=""><span class="fas fa-angle-double-right"> Hướng dẫn chọn size</span></a><br>
+                    <a href=""><span class="fas fa-angle-double-right"> Câu hỏi thường gặp</span></a><br>
+                    <a href=""><span class="fas fa-angle-double-right"> Chính sách khách VIP</span></a><br>
+                    <a href=""><span class="fas fa-angle-double-right"> Thanh toán & Giao hàng</span></a><br>
+                    <a href=""><span class="fas fa-angle-double-right"> Chính sách đổi hàng</span></a><br>
+                    <a href=""><span class="fas fa-angle-double-right"> Chính sách bảo mật</span></a><br>
+
+                </div>
+                <div class="col-lg-4 col-6 text-white mt-4">
+                    <h4 style="font-size: 20px; text-align: center;">HỆ THỐNG CỬA HÀNG</h4>
+                    <p>Địa Chỉ: 58/27 Thạch Lam,Phường Hoà Thạnh, Quận Tân Phú, TP.HCM</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.439868495852!2d106.
+                    62789697491858!3d10.77758345917262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
+                    1!3m3!1m2!1s0x31752ea74746d8e5%3A0xbb4f80a846b29f18!2zNTgvMjcgVGjhuqFjaCBMYW0sIFBow7ogVGjhuqFuaCwgVMOibiBQaMO6LCBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1720292153031!5m2!1svi!2s" 
+                    width="90%" style="border:0;" allowfullscreen="" loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="col-lg-3 col-6 text-white mt-4">
+                    <h4 style="font-size: 20px; text-align: center;">KẾT NỐI VỚI CHÚNG TÔI</h4>
+                    <img src="./img/nhi.jpg" width="100%" height="200px">
+                    <div class="mt-3 " style="text-align: center;">
+                        <img src="./img/icon-1.png" alt="">
+                        <img src="./img/icon-2.png" alt="">
+                        <img src="./img/icon-3.png" alt="">
+                        <img src="./img/icon-4.png" alt="">
+                    </div>
+                </div>
+                    
+            </div>
+        </div>
+    </div>
+    
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+        <script src="admin.js"></script>
+</body>
+
+</html>
